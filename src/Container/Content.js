@@ -12,7 +12,7 @@ function Content(props) {
       <div className="main__image__content">
         <img src={props.posts.image} alt="img" />
         <h3>{props.posts.title}</h3>
-        <button onClick={props.postButton}>$ {props.posts.price}</button>
+        <h3 onClick={props.postButton}>$ {props.posts.price}</h3>
         <button onClick={() => addItem(props.posts)}>Add to Cart</button>
         <div className="read__more__text">
           <ReactReadMoreReadLess
